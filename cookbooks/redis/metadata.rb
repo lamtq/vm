@@ -2,13 +2,13 @@ maintainer       "Benjamin Black"
 maintainer_email "b@b3k.us"
 license          "Apache 2.0"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "3.0.4"
+version          "3.1.0"
 
 description      "Redis: a fast, flexible datastore offering an extremely useful set of data structure primitives"
 
 depends          "runit"
 depends          "install_from"
-depends          "metachef"
+depends          "silverware"
 
 recipe           "redis::default",                     "Base configuration for redis"
 recipe           "redis::install_from_package",        "Install From Ubuntu Package -- easy but lags in version"
